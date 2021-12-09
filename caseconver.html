@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>js..</title>
+
+<script language="javascript">
+alert("Enter the string to Convert.")
+
+function tolow()
+{
+var x,y;
+x=document.frm.txt.value;
+y=x.toLowerCase();
+document.frm.txtout.value=y;
+}
+function toup()
+{
+var x,y;
+x=document.frm.txt.value;
+y=x.toUpperCase();
+document.frm.txtout.value=y;
+}
+function tonum()
+{
+var x,y;
+x=document.frm.txt.value;
+y=isNaN(x);
+document.frm.txtoutput.value=y;
+}
+
+
+</script>
+</head>
+
+<body bgcolor="#315399"><center>
+ <h1>Case Conversion</h1>
+ <form name="frm">
+ <h2>Text</h2> 
+ <input type="text" name="txt">
+ <br>
+ <h2>Converted</h2>
+ <input type="text" name="txtout" ><br><br>
+<input type="text" name="txtoutput" ><br><br>
+ <input type="button" onClick="tolow()" value="ToLowerCase">&nbsp&nbsp
+ <input type="button" onClick="toup()" value="ToUpperCase">
+ <input type="button" onClick="tonum()" value="CheckItsAChar";
+</form></center>
+</body>
+
+</html>
